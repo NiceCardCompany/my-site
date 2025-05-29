@@ -1,65 +1,59 @@
 body {
     margin: 0;
     font-family: monospace;
-    background-color: black;
-    color: white;
-}
-
-#container {
+    background-color: #1e1e1e;
+    color: #fff;
     display: flex;
-    height: 100vh;
 }
 
-#sidebar {
+.sidebar {
     width: 250px;
-    background-color: #111;
+    background-color: #000;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
-.logo {
-    font-size: 0.75rem;
-    white-space: pre-wrap;
-    margin-bottom: 2rem;
-    text-align: left;
-    color: white;
+.sidebar .ascii {
+    white-space: pre;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-#sidebar ul {
-    list-style: none;
+.sidebar ul {
+    list-style-type: none;
     padding: 0;
 }
 
-#sidebar a {
-    color: white;
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
     text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
-#sidebar a:hover {
-    background-color: white;
-    color: black;
-    padding-left: 5px;
-}
-
-.footer {
-    margin-top: 2rem;
-}
-
-.case-key {
-    display: block;
+.sidebar ul li a:hover {
     text-decoration: underline;
-    color: white;
-    text-transform: uppercase;
 }
 
-#main-content {
+.external-link a {
+    color: #8e44ad;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main {
     flex-grow: 1;
     padding: 40px;
-    background-color: #222;
+    background-color: #2e2e2e;
+}
+
+.main h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
